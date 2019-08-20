@@ -1,1 +1,51 @@
 theme: jekyll-theme-cayman
+
+# Site Info
+title: taewon's blog
+tagline: 'for ML & DL'
+description: 'blog for ML & DL'
+url: http://taewonheo.github.io
+logo: '/public/logo.png'
+encoding: utf-8
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+version: 1.0.0
+
+# About/contact
+author:
+  name: Taewon Heo
+  description: 
+  contact:
+#     linkedin:  https://www.linkedin.com/in/gichanglee/
+    github:    https://github.com/taewonheo
+#     facebook:  https://www.facebook.com/gichanglee.84
+    #twitter:  <hide>
+    #weibo:    <hide>
+    email:     mailto:twheo@yonsei.ac.kr
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Contents:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
