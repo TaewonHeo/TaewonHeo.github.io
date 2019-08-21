@@ -1,10 +1,14 @@
 # --- General options --- #
 
 # Name of website
-title: My website
 
-# Short description of your site
-description: A virtual proof that I'm awesome
+# Site Info
+title: taewon's blog
+tagline: 'for ML & DL'
+description: 'blog for ML & DL'
+url: http://taewonheo.github.io
+logo: '/public/logo.png'
+encoding: utf-8
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -156,7 +160,7 @@ date_format: "%B %-d, %Y"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+# timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -254,3 +258,47 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+
+
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+version: 1.0.0
+
+# About/contact
+author:
+  name: Taewon Heo
+  description: 
+  contact:
+#     linkedin:  https://www.linkedin.com/in/gichanglee/
+    github:    https://github.com/taewonheo
+#     facebook:  https://www.facebook.com/gichanglee.84
+    #twitter:  <hide>
+    #weibo:    <hide>
+    email:     mailto:twheo@yonsei.ac.kr
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Contents:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
